@@ -97,8 +97,9 @@ public class Login extends javax.swing.JFrame {
         input_user.setToolTipText("");
         input_user.setBorder(null);
         input_user.setMargin(new java.awt.Insets(4, 30, 4, 8));
-        input_user.setMinimumSize(new java.awt.Dimension(100, 15));
-        input_user.setPreferredSize(new java.awt.Dimension(130, 20));
+        input_user.setMaximumSize(new java.awt.Dimension(200, 200));
+        input_user.setMinimumSize(new java.awt.Dimension(100, 25));
+        input_user.setPreferredSize(new java.awt.Dimension(180, 30));
         input_user.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 input_userActionPerformed(evt);
@@ -116,8 +117,9 @@ public class Login extends javax.swing.JFrame {
         input_password.setToolTipText("");
         input_password.setBorder(null);
         input_password.setMargin(new java.awt.Insets(4, 30, 4, 8));
-        input_password.setMinimumSize(new java.awt.Dimension(100, 15));
-        input_password.setPreferredSize(new java.awt.Dimension(130, 20));
+        input_password.setMaximumSize(new java.awt.Dimension(200, 200));
+        input_password.setMinimumSize(new java.awt.Dimension(100, 25));
+        input_password.setPreferredSize(new java.awt.Dimension(180, 30));
         input_password.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 input_passwordActionPerformed(evt);
@@ -126,17 +128,16 @@ public class Login extends javax.swing.JFrame {
 
         btn_login.setBackground(new java.awt.Color(153, 153, 153));
         btn_login.setFont(getFont());
-        btn_login.setForeground(new java.awt.Color(0, 0, 0));
         btn_login.setText("Login");
         btn_login.setAlignmentY(0.0F);
         btn_login.setBorderPainted(false);
         btn_login.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_login.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_login.setMargin(new java.awt.Insets(5, 5, 5, 5));
-        btn_login.setMaximumSize(new java.awt.Dimension(60, 30));
-        btn_login.setMinimumSize(new java.awt.Dimension(50, 15));
+        btn_login.setMaximumSize(new java.awt.Dimension(90, 30));
+        btn_login.setMinimumSize(new java.awt.Dimension(85, 30));
         btn_login.setName("Botão de Login"); // NOI18N
-        btn_login.setPreferredSize(new java.awt.Dimension(50, 20));
+        btn_login.setPreferredSize(new java.awt.Dimension(85, 30));
         btn_login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_loginActionPerformed(evt);
@@ -154,43 +155,48 @@ public class Login extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(46, 46, 46)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_welcome)
-                    .addComponent(lbl_status, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(227, 227, 227)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btn_login, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btn_login, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(lbl_titleUser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(lbl_titlePassword, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(227, 227, 227)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(lbl_titleUser, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+                                    .addComponent(lbl_titlePassword, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(input_password, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(input_user, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
-                .addContainerGap(301, Short.MAX_VALUE))
+                                    .addComponent(input_user, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lbl_status, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lbl_welcome))
+                                .addGap(0, 0, Short.MAX_VALUE)))))
+                .addGap(281, 281, 281))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(38, 38, 38)
                 .addComponent(lbl_welcome)
-                .addGap(160, 160, 160)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_titleUser, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(input_user, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(170, 170, 170)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(input_user, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_titleUser, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl_titlePassword, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(input_password, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(input_password, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
-                .addComponent(btn_login, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(169, 169, 169)
+                .addComponent(btn_login, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(126, 126, 126)
                 .addComponent(lbl_status, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(63, 63, 63))
+                .addGap(96, 96, 96))
         );
 
         btn_login.getAccessibleContext().setAccessibleDescription("Botão pra enviar os dados para o Server");

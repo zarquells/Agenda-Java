@@ -15,7 +15,7 @@ public class Mod_conexao {
         //String que contém o nome da classe driver JDBC
         //(API de conexão do Java)
         
-        String url = "jdbc:mysql://localhost:3306/bd_agenda";
+        String url = "jdbc:mysql://localhost:3307/agenda";
         //URL de conexão: 
         //localhost - endereço, 3306 - porta, bd_agenda - nome do banco de dados
         
